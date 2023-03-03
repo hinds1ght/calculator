@@ -1,0 +1,91 @@
+*{
+    font-size: 20px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right, blue, green);
+}
+#calculator{
+    width: 400px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 7px;
+    grid-template-areas:
+    "display display display display"
+    "plus minus timess divide"
+    "seven eight nine equals"
+    "four five six equals"
+    "one two three equals"
+    "decimals zeros clear equals";
+}
+.display{
+    height: 90px;
+    grid-area: display;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    margin-bottom: 0px;
+}
+.dis{
+    font-size: 30px;
+    padding-right: 5px;
+    color: azure;
+}
+
+.plus{
+    grid-area: plus;
+}
+.minus{
+    grid-area: minus;
+}
+.timess{
+    grid-area: timess;
+}
+.divide{
+    grid-area: divide;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.equals{
+    grid-area: equals;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.decimals{
+    grid-area: decimals;
+}
+.zeros{
+    grid-area: zeros;
+}
+.clear{
+    grid-area: clear;
+}
